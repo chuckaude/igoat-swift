@@ -1,0 +1,4 @@
+capture:
+  build:
+    clean-command:
+    build-command: xcodebuild -UseModernBuildSystem=NO -workspace iGoat-Swift/iGoat-Swift.xcodeproj/project.xcworkspace -scheme iGoat-Swift build CODE_SIGNING_ALLOWED=NO
