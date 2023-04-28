@@ -18,4 +18,5 @@ jobs:
         xcodebuild -list -workspace iGoat-Swift/iGoat-Swift.xcworkspace
         xcodebuild -list -project iGoat-Swift/iGoat-Swift.xcodeproj
         pod init && pod --project-directory=iGoat-Swift/iGoat-Swift.xcodeproj install
-        xcodebuild -project iGoat-Swift/iGoat-Swift.xcodeproj -scheme iGoat-Swift -configuration Release build IPHONEOS_DEPLOYMENT_TARGET=16.2
+        xcodebuild -workspace iGoat-Swift/iGoat-Swift.xcworkspace -scheme iGoat-Swift build CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO
+        
